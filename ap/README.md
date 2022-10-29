@@ -6,7 +6,20 @@
 
 ## 版本說明（自 0.17 版起）
 
-### latest, 2.4（2022-03-22）
+### latest, 3.0, 3.0-arm（2022-10-29）
+
+* 作業系統使用 **Ubuntu 22.04 LTS**
+  * 因由 **20.04 LTS** 升級上來，故映像檔大版本跳號至 **3**
+* 主要軟體版本：
+  * **Vim 9.0.749**
+  * **GNU Nano 6.4**
+  * **Apache 2.4.54**
+  * **PHP 8.1.12**
+  * **Composer 2.4.4**
+  * **Node.js 18.12.0**
+    * **npm 8.19.2**
+
+### 2.4（2022-03-22）
 
 * 使用 **Ubuntu 20.04 LTS** 映像檔
 * 支援 MSSQL：加裝 **gpg-agent**、**Microsoft ODBC 18** 與 **Microsoft SQL Server Driver for PHP**
