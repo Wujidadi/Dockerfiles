@@ -1,4 +1,4 @@
-FROM wujidadi/ap:1.5
+FROM wujidadi/ap:1.5-arm
 LABEL MAINTAINER="wujidadi@gmail.com"
 
 ARG phpversion=7.4
