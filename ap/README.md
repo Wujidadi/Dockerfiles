@@ -6,6 +6,24 @@
 
 ## 版本說明（自 0.17 版起）
 
+### 3.3（2023-02-16）
+
+* 此版本起用 `docker buildx` 直接建構跨平台映像檔  
+  指令如下（`$D` 為自訂的日誌輸出目錄別名）：
+  ```sh
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ap:3.3 [-t wujidadi/ap:latest] ap/3.3 2>&1 | tee $D/docker-build-ap.log
+  ```
+* 作業系統使用 **Ubuntu 22.04 LTS**
+* 主要軟體版本：
+  * **Vim 9.0.1313**
+  * **GNU Nano 7.2**
+  * **Apache 2.4.55**
+  * **PHP 8.2.3**
+  * **Composer 2.5.4**
+  * **Node.js 19.6.0**
+    * **npm 9.4.0**
+* 不再同步維護 PHP 7 版本（也就是說沒有 1.9 版了）
+
 ### 3.2, 3.2-arm（2022-12-30）
 
 * 作業系統使用 **Ubuntu 22.04 LTS**
@@ -48,7 +66,7 @@
   * **Node.js 18.12.0**
     * **npm 8.19.2**
 
-### latest, 3.0, 3.0-arm（2022-10-29）
+### 3.0, 3.0-arm（2022-10-29）
 
 * 作業系統使用 **Ubuntu 22.04 LTS**
   * 因由 **20.04 LTS** 升級上來，故映像檔大版本跳號至 **3**

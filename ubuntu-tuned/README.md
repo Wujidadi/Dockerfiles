@@ -4,6 +4,18 @@
 
 ## 版本說明
 
+### 2.3（2023-02-16）
+
+* 此版本起用 `docker buildx` 直接建構跨平台映像檔  
+  指令如下（`$D` 為自訂的日誌輸出目錄別名）：
+  ```sh
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.3 [-t wujidadi/ubuntu-tuned:latest] ubuntu-tuned/2.3 2>&1 | tee $D/docker-build-ut.log
+  ```
+* 作業系統使用 **Ubuntu 22.04 LTS**
+* 主要軟體版本：
+  * **Vim 9.0.1313**
+  * **GNU Nano 7.2**
+
 ### 2.2, 2.2-arm（2022-12-30）
 
 * 作業系統使用 **Ubuntu 22.04 LTS**
