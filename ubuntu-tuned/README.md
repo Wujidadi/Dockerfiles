@@ -1,8 +1,19 @@
 # Ubuntu Tuned 映像檔
 
-參照 wujidadi/ap，但未安裝 Apache、Nginx、PHP、Node.js 及相關軟體，僅安裝基本套件和 Zsh（含 Oh My Zsh），是相對乾淨的 Ubuntu 環境。
+參照 wujidadi/ap，但未安裝 Apache、Nginx、PHP、Node.js 及相關軟體，僅安裝基本套件和 Zsh（含 Oh My Zsh），是相對純淨的 Ubuntu 環境。
 
 ## 版本說明
+
+### 2.4（2023-04-01）
+
+* `docker buildx` 建構跨平台映像檔指令如下（`$D` 為自訂的日誌輸出目錄別名）：
+  ```sh
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.4 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.4 2>&1 | tee $D/docker-build-ut.log
+  ```
+* 作業系統使用 **Ubuntu 22.04 LTS**
+* 主要軟體版本：
+  * **Vim 9.0.1433**
+  * **GNU Nano 7.2**
 
 ### 2.3（2023-02-16）
 

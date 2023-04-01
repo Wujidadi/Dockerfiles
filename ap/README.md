@@ -6,6 +6,24 @@
 
 ## 版本說明（自 0.17 版起）
 
+### 3.4（2023-04-01）
+
+* `docker buildx` 建構跨平台映像檔指令如下（`$D` 為自訂的日誌輸出目錄別名）：
+  ```sh
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.4 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.4 2>&1 | tee $D/docker-build-ut.log
+  ```
+* 作業系統使用 **Ubuntu 22.04 LTS**
+* 主要軟體版本：
+  * **Vim 9.0.1433**
+  * **GNU Nano 7.2**
+  * **Apache 2.4.56**
+  * **PHP 8.2.4**
+  * **Composer 2.5.5**
+  * **Swoole 5.0.2**
+  * **Microsoft ODBC Driver for SQL Server 18.2.1.1**
+  * **Node.js 19.8.1**
+    * **npm 9.5.1**
+
 ### 3.3（2023-02-16）
 
 * 此版本起用 `docker buildx` 直接建構跨平台映像檔  
