@@ -1,7 +1,5 @@
-# Taras' Dockerfiles
+# Dockerfiles of Wujidadi (Taras)
 
-2022-10-29 從原本混合了個別專案檔案的 [Docker-Scripts 專案](https://github.com/Wujidadi/Docker-Scripts)（私有庫）獨立出來。
+> 2022-10-29 separated from original [Docker-Scripts Project](https://github.com/Wujidadi/Docker-Scripts) (private) which contains a mix of files from individual projects.
 
-區分 **ap**、**nginx-php**、**ubuntu-tuned** 3 種映像檔，更新日誌詳見各映像檔目錄下的 `README.md`。
-
-建置測試參考指令：`$CLOUD/Data/資訊科技/Docker/建置測試參考指令.sh`
+Divided into 3 types of images: **ap**, **nginx-php**, **ubuntu-tuned**. See `README.md` in each image directory for detail update log.
