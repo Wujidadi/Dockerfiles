@@ -4,12 +4,19 @@ On the basis of wujidadi/ap, but without Apache, Nginx, PHP, Node.js and related
 
 ## Release Notes
 
-### 2.5 (2023-05-01)
+### 2.5.1 (2023-05-10)
 
 * `docker buildx` commands: (`$D` is a custom alias of the log directory)
   ```sh
-  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.5 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.5 2>&1 | tee $D/docker-build-ut.log
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.5.1 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.5.1 2>&1 | tee $D/docker-build-ut.log
   ```
+* OS: **Ubuntu 22.04 LTS**
+* Main software versions:
+  * **Vim 9.0.1536**
+  * **GNU Nano 7.2**
+
+### 2.5 (2023-05-01)
+
 * OS: **Ubuntu 22.04 LTS**
 * Main software versions:
   * **Vim 9.0.1503**
@@ -17,10 +24,6 @@ On the basis of wujidadi/ap, but without Apache, Nginx, PHP, Node.js and related
 
 ### 2.4 (2023-04-01)
 
-* `docker buildx` commands: (`$D` is a custom alias of the log directory)
-  ```sh
-  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.4 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.4 2>&1 | tee $D/docker-build-ut.log
-  ```
 * OS: **Ubuntu 22.04 LTS**
 * Main software versions:
   * **Vim 9.0.1433**
@@ -28,11 +31,7 @@ On the basis of wujidadi/ap, but without Apache, Nginx, PHP, Node.js and related
 
 ### 2.3 (2023-02-16)
 
-* `docker buildx` is used to build multiarch images since this version.  
-  The commands: (`$D` is a custom alias of the log directory)
-  ```sh
-  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.3 [-t wujidadi/ubuntu-tuned:latest] ubuntu-tuned/2.3 2>&1 | tee $D/docker-build-ut.log
-  ```
+* `docker buildx` is used to build multiarch images since this version.
 * OS: **Ubuntu 22.04 LTS**
 * Main software versions:
   * **Vim 9.0.1313**
