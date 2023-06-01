@@ -4,12 +4,19 @@ On the basis of wujidadi/ap, but without Apache, Nginx, PHP, Node.js and related
 
 ## Release Notes
 
-### 2.5.2 (2023-05-11)
+### 2.6 (2023-06-01)
 
 * `docker buildx` commands: (`$D` is a custom alias of the log directory)
   ```sh
-  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.5.2 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.5.2 2>&1 | tee $D/docker-build-ut.log
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ubuntu-tuned:2.6 -t wujidadi/ubuntu-tuned:latest ubuntu-tuned/2.6 2>&1 | tee $D/docker-build-ut.log
   ```
+* OS: **Ubuntu 22.04 LTS**
+* Main software versions:
+  * **Vim 9.0.1595**
+  * **GNU Nano 7.2**
+
+### 2.5.2 (2023-05-11)
+
 * OS: **Ubuntu 22.04 LTS**
 * Main software versions:
   * **Vim 9.0.1539**
