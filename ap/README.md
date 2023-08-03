@@ -6,12 +6,27 @@ Base on Ubuntu, with Apache, PHP, Node.js and other softwares tuned and installe
 
 ## Release Notes (since version 0.17)
 
-### 3.7 (2023-07-01)
+### 3.8 (2023-08-03)
 
 * `docker buildx` commands: (`$D` is a custom alias of the log directory)
   ```sh
-  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ap:3.7 -t wujidadi/ap:latest ap/3.7 2>&1 | tee $D/docker-build-ap.log
+  docker buildx build --no-cache --progress=plain --push --platform linux/amd64,linux/arm64 --rm -t wujidadi/ap:3.8 -t wujidadi/ap:latest ap/3.8 2>&1 | tee $D/docker-build-ap.log
   ```
+* OS: **Ubuntu 22.04 LTS**
+* Main software versions:
+  * **Vim 9.0.1677**
+  * **GNU Nano 7.2**
+  * **Apache 2.4.57**
+  * **PHP 8.2.7**
+  * **Composer 2.5.8**
+  * **Swoole 5.0.3**
+  * **Microsoft ODBC Driver for SQL Server 18.3.1.1**
+  * **Node.js 20.5.0**
+    * **npm 9.8.1**
+* PHP **xdebug** and **http** (with **raphf**) extensions are specifically installed.
+
+### 3.7 (2023-07-01)
+
 * OS: **Ubuntu 22.04 LTS**
 * Main software versions:
   * **Vim 9.0.1671**

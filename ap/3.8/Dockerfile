@@ -5,7 +5,7 @@ ARG user=user
 ARG appdir=application
 ARG php_version=8.2
 ARG node_version=20
-ARG vim_tag=v9.0.1671
+ARG vim_tag=v9.0.1677
 ARG nano_great_version=7
 ARG nano_version=7.2
 ARG msodbc_version=18
@@ -74,7 +74,7 @@ RUN echo '';\
     add-apt-repository -y ppa:ondrej/apache2;\
     add-apt-repository -y ppa:ondrej/php;\
     apt-get update && apt-get upgrade -y;\
-    apt-get install -y --no-install-recommends php${php_version} php${php_version}-cli php${php_version}-common php${php_version}-fpm php${php_version}-xdebug php${php_version}-pdo php-pear php${php_version}-curl php${php_version}-dev php${php_version}-gd php${php_version}-mbstring php${php_version}-zip php${php_version}-mysql php${php_version}-mysqlnd php${php_version}-opcache php${php_version}-readline php${php_version}-xml php${php_version}-tidy php${php_version}-imagick php${php_version}-gmp php${php_version}-bz2 php${php_version}-soap php${php_version}-bcmath php${php_version}-intl php${php_version}-pgsql php${php_version}-sqlite3 apache2 apache2-doc apache2-utils libapache2-mod-php${php_version} odbc-postgresql;\
+    apt-get install -y --no-install-recommends php${php_version} php${php_version}-cli php${php_version}-common php${php_version}-fpm php${php_version}-raphf php${php_version}-http php${php_version}-xdebug php${php_version}-pdo php-pear php${php_version}-curl php${php_version}-dev php${php_version}-gd php${php_version}-mbstring php${php_version}-zip php${php_version}-mysql php${php_version}-mysqlnd php${php_version}-opcache php${php_version}-readline php${php_version}-xml php${php_version}-tidy php${php_version}-imagick php${php_version}-gmp php${php_version}-bz2 php${php_version}-soap php${php_version}-bcmath php${php_version}-intl php${php_version}-pgsql php${php_version}-sqlite3 apache2 apache2-doc apache2-utils libapache2-mod-php${php_version} odbc-postgresql;\
     a2enmod headers;\
     a2enmod rewrite;\
     ln -s /usr/sbin/php-fpm${php_version} /usr/sbin/php-fpm;\

@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 LABEL MAINTAINER="wujidadi@gmail.com"
 
 ARG user=user
-ARG vim_tag=v9.0.1671
+ARG vim_tag=v9.0.1677
 ARG nano_great_version=7
 ARG nano_version=7.2
 
